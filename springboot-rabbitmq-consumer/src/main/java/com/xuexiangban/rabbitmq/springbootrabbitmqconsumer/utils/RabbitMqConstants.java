@@ -29,4 +29,10 @@ public class RabbitMqConstants {
     public static final String EXCHANGE_NAME_ORDER_MESSAGE_TTL_DIRECT = "ttl_message_direct_exchange";
     public static final String QUEUE_NAME_MESSAGE_TTL_DIRECT = "ttl.message.direct.queue";
 
+    /**
+     * 死信交换机和队列
+     */
+    public static final String EXCHANGE_NAME_ORDER_DEAD_DIRECT = "dead_direct_exchange";
+    public static final String QUEUE_NAME_DEAD_DIRECT = "dead.direct.queue";
+
 }

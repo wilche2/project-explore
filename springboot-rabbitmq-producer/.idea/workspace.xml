@@ -10,7 +10,7 @@
       <change afterPath="$PROJECT_DIR$/../springboot-rabbitmq-consumer/target/classes/com/xuexiangban/rabbitmq/springbootrabbitmqconsumer/service/fanout/FanoutWeChatConsumerService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../springboot-rabbitmq-consumer/target/classes/com/xuexiangban/rabbitmq/springbootrabbitmqconsumer/utils/RabbitMqConstants.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../springboot-rabbitmq-consumer/target/test-classes/com/xuexiangban/rabbitmq/springbootrabbitmqconsumer/SpringbootRabbitmqConsumerApplicationTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/config/TTLRabbitMqConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/config/DeadRabbitMqConfiguration.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/SpringBootRabbitmqProducerApplication.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/service/OrderService.class" afterDir="false" />
@@ -20,9 +20,8 @@
       <change beforePath="$PROJECT_DIR$/../rabbitmq-java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rabbitmq-java/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springboot-rabbitmq-consumer/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqconsumer/utils/RabbitMqConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-rabbitmq-consumer/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqconsumer/utils/RabbitMqConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/config/TTLRabbitMqConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/config/TTLRabbitMqConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/utils/RabbitMqConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/utils/RabbitMqConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/SpringBootRabbitmqProducerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/SpringBootRabbitmqProducerApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,92 +34,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/utils/RabbitMqConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="60" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/SpringBootRabbitmqProducerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/config/DirectRabbitMqConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="42" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/SpringBootRabbitmqProducerApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-              <folding>
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#481#482#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#927#928#0" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1000#1001#0" expanded="true" />
-                <element signature="e#1053#1054#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../springboot-rabbitmq-consumer/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqconsumer/utils/RabbitMqConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="29" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/config/TTLRabbitMqConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1535#1536#0" expanded="true" />
-                <element signature="e#1604#1605#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/service/OrderService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -173,11 +87,12 @@
         <option value="$PROJECT_DIR$/../springboot-rabbitmq-consumer/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqconsumer/service/topic/TopicWeChatConsumerService.java" />
         <option value="$PROJECT_DIR$/../springboot-rabbitmq-consumer/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqconsumer/config/DirectRabbitMqConfiguration.java" />
         <option value="$PROJECT_DIR$/../springboot-rabbitmq-consumer/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqconsumer/config/TTLRabbitMqConfiguration.java" />
-        <option value="$PROJECT_DIR$/../springboot-rabbitmq-consumer/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqconsumer/utils/RabbitMqConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/utils/RabbitMqConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/config/TTLRabbitMqConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/SpringBootRabbitmqProducerApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/utils/RabbitMqConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/config/DeadRabbitMqConfiguration.java" />
+        <option value="$PROJECT_DIR$/../springboot-rabbitmq-consumer/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqconsumer/utils/RabbitMqConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/config/TTLRabbitMqConfiguration.java" />
       </list>
     </option>
   </component>
@@ -214,139 +129,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootrabbitmqconsumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootrabbitmqconsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootrabbitmqconsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootrabbitmqproducer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootrabbitmqproducer" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootrabbitmqproducer" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootrabbitmqproducer" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-rabbitmq-producer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-rabbitmq-producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootrabbitmqproducer" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -391,7 +174,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpringBootRabbitmqProducerApplicationTests.testMessageTtl">
+  <component name="RunManager" selected="JUnit.SpringBootRabbitmqProducerApplicationTests.testTtl">
     <configuration name="SpringBootRabbitmqProducerApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-rabbitmq-producer" />
       <option name="PACKAGE_NAME" value="com.xuexiangban.rabbitmq.springbootrabbitmqproducer" />
@@ -458,8 +241,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringBootRabbitmqProducerApplicationTests.testMessageTtl" />
         <item itemvalue="JUnit.SpringBootRabbitmqProducerApplicationTests.testTtl" />
+        <item itemvalue="JUnit.SpringBootRabbitmqProducerApplicationTests.testMessageTtl" />
         <item itemvalue="JUnit.SpringBootRabbitmqProducerApplicationTests.testTopic" />
         <item itemvalue="JUnit.SpringBootRabbitmqProducerApplicationTests.testDirect" />
         <item itemvalue="JUnit.SpringBootRabbitmqProducerApplicationTests.contextLoads" />
@@ -478,7 +261,7 @@
       <updated>1616245894809</updated>
       <workItem from="1616245897242" duration="2210000" />
       <workItem from="1616248490858" duration="1268000" />
-      <workItem from="1616249788120" duration="7869000" />
+      <workItem from="1616249788120" duration="9141000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目project-explore&#10;1. 将rabbitmq-java项目整合进来&#10;2. 初始化springboot-rabbitmq-producer&#10;3. 初始化springboot-rabbitmq-consumer">
       <created>1616250114375</created>
@@ -508,19 +291,17 @@
       <option name="project" value="LOCAL" />
       <updated>1616309586914</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1. 设置消息队列的ttl&#10;2. 设置消息本身的ttl&#10;3. 如果队列和消息设置的过期时间，那么以最小的时间为准">
+      <created>1616311817532</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616311817532</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpringBootRabbitmqProducerApplicationTests_testDirect - 2021.03.21 at 14h 09m 49s.xml">
-      <configuration name="SpringBootRabbitmqProducerApplicationTests.testDirect" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringBootRabbitmqProducerApplicationTests_testDirect - 2021.03.21 at 14h 28m 34s.xml">
-      <configuration name="SpringBootRabbitmqProducerApplicationTests.testDirect" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringBootRabbitmqProducerApplicationTests_testDirect - 2021.03.21 at 14h 31m 17s.xml">
-      <configuration name="SpringBootRabbitmqProducerApplicationTests.testDirect" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SpringBootRabbitmqProducerApplicationTests_testTopic - 2021.03.21 at 14h 50m 54s.xml">
       <configuration name="SpringBootRabbitmqProducerApplicationTests.testTopic" configurationId="JUnit" />
     </history-entry>
@@ -542,13 +323,21 @@
     <history-entry file="SpringBootRabbitmqProducerApplicationTests_testTtl - 2021.03.21 at 15h 14m 34s.xml">
       <configuration name="SpringBootRabbitmqProducerApplicationTests.testTtl" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpringBootRabbitmqProducerApplicationTests_testMessageTtl - 2021.03.21 at 15h 26m 47s.xml">
+      <configuration name="SpringBootRabbitmqProducerApplicationTests.testMessageTtl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootRabbitmqProducerApplicationTests_testMessageTtl - 2021.03.21 at 15h 27m 55s.xml">
+      <configuration name="SpringBootRabbitmqProducerApplicationTests.testMessageTtl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootRabbitmqProducerApplicationTests_testTtl - 2021.03.21 at 15h 46m 18s.xml">
+      <configuration name="SpringBootRabbitmqProducerApplicationTests.testTtl" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11347000" />
+    <option name="totallyTimeSpent" value="12619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17377399" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -559,7 +348,7 @@
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35249457" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19414316" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -595,7 +384,8 @@
     <MESSAGE value="1. 规范fanout模式下的命名" />
     <MESSAGE value="1. 新增direct模式的demo" />
     <MESSAGE value="1. topic 模式，使用配置注解类进行测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. topic 模式，使用配置注解类进行测试" />
+    <MESSAGE value="1. 设置消息队列的ttl&#10;2. 设置消息本身的ttl&#10;3. 如果队列和消息设置的过期时间，那么以最小的时间为准" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 设置消息队列的ttl&#10;2. 设置消息本身的ttl&#10;3. 如果队列和消息设置的过期时间，那么以最小的时间为准" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -830,29 +620,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../springboot-rabbitmq-consumer/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqconsumer/utils/RabbitMqConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="29" selection-end-column="90" />
+        <state relative-caret-position="540">
+          <caret line="35" column="76" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/utils/RabbitMqConstants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/config/DeadRabbitMqConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="60" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/SpringBootRabbitmqProducerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="-72">
+          <caret line="10" column="90" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
+          <folding>
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/config/TTLRabbitMqConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="341">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1535#1536#0" expanded="true" />
@@ -861,10 +648,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/SpringBootRabbitmqProducerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../apache-maven-3.6.1/repository/org/springframework/amqp/spring-rabbit/2.2.13.RELEASE/spring-rabbit-2.2.13.RELEASE.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="555" column="16" selection-start-line="555" selection-start-column="16" selection-end-line="555" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../apache-maven-3.6.1/repository/org/springframework/amqp/spring-rabbit/2.2.13.RELEASE/spring-rabbit-2.2.13.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="1065" column="13" selection-start-line="1065" selection-start-column="13" selection-end-line="1065" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/utils/RabbitMqConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/service/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+        <state relative-caret-position="213">
+          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -873,8 +688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/xuexiangban/rabbitmq/springbootrabbitmqproducer/SpringBootRabbitmqProducerApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        <state relative-caret-position="217">
+          <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
           <folding>
             <element signature="e#431#432#0" expanded="true" />
             <element signature="e#481#482#0" expanded="true" />
