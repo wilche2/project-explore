@@ -8,5 +8,7 @@ spring:
     username: admin
     password: admin
     virtual-host: /
-    host: 159.75.4.236
-    port: 5672
+    # host: 159.75.4.236
+    # port: 5672
+    publisher-confirm-type: correlated
+    addresses: 159.75.4.236:5672
