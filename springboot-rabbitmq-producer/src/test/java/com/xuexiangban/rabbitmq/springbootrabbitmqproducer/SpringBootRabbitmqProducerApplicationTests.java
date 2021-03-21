@@ -33,4 +33,15 @@ class SpringBootRabbitmqProducerApplicationTests {
         }
     }
 
+    @Test
+    void testTtl() {
+        orderService.makeOrderTtl(1L, 1L, 12);
+    }
+
+    @Test
+    void testMessageTtl() {
+        orderService.makeOrderMessageTtl(1L, 1L, 12);
+    }
+
+
 }

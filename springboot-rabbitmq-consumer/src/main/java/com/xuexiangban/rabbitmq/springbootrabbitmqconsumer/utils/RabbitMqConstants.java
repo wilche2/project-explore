@@ -1,6 +1,8 @@
 package com.xuexiangban.rabbitmq.springbootrabbitmqconsumer.utils;
 
 /**
+ * 队列和交换机绑定关系，推荐的consumer中绑定
+ *
  * @author caoweiquan
  * @date 2021/3/20 21:36
  */
@@ -20,5 +22,11 @@ public class RabbitMqConstants {
     public static final String QUEUE_NAME_EMAIL_TOPIC = "email.topic.queue";
     public static final String QUEUE_NAME_SMS_TOPIC = "sms.topic.queue";
     public static final String QUEUE_NAME_WECHAT_TOPIC = "weChat.topic.queue";
+
+    public static final String EXCHANGE_NAME_ORDER_TTL_DIRECT = "ttl_direct_exchange";
+    public static final String QUEUE_NAME_TTL_DIRECT = "ttl.direct.queue";
+
+    public static final String EXCHANGE_NAME_ORDER_MESSAGE_TTL_DIRECT = "ttl_message_direct_exchange";
+    public static final String QUEUE_NAME_MESSAGE_TTL_DIRECT = "ttl.message.direct.queue";
 
 }

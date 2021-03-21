@@ -21,4 +21,8 @@ public class RabbitMqConstants {
     public static final String QUEUE_NAME_SMS_TOPIC = "sms.topic.queue";
     public static final String QUEUE_NAME_WECHAT_TOPIC = "weChat.topic.queue";
 
+    public static final String EXCHANGE_NAME_ORDER_TTL_DIRECT = "ttl_direct_exchange";
+    public static final String QUEUE_NAME_TTL_DIRECT = "ttl.direct.queue";
+    public static final String QUEUE_NAME_MESSAGE_TTL_DIRECT = "ttl.message.direct.queue";
+
 }
