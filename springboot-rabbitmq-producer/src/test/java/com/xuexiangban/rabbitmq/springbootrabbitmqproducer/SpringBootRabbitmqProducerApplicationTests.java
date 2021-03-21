@@ -18,6 +18,11 @@ class SpringBootRabbitmqProducerApplicationTests {
     }
 
     @Test
+    void testTopic() {
+        orderService.makeOrderTopic(1L, 1L, 12);
+    }
+
+    @Test
     public void testDirect() throws Exception {
         for (int i = 0; i < 10; i++) {
             Thread.sleep(1000);
