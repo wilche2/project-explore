@@ -17,7 +17,7 @@ public class FanoutWeChatConsumerService {
     @RabbitHandler
     public void messageAccept(String message) {
         // 省略
-        System.out.println("WECHAT-------------->" + message);
+        System.out.println("fanout WeChat --------------> " + message);
     }
 
 }

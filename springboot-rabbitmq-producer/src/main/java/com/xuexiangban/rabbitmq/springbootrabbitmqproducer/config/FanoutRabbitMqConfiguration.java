@@ -14,7 +14,7 @@ import static com.xuexiangban.rabbitmq.springbootrabbitmqproducer.utils.RabbitMq
  * @date 2021/3/20 21:42
  */
 @Configuration
-public class RabbitMqConfiguration {
+public class FanoutRabbitMqConfiguration {
 
     /**
      * 创建fanout模式交换机
@@ -27,33 +27,38 @@ public class RabbitMqConfiguration {
     }
 
     @Bean
-    public Queue emailQueue() {
+    public Queue fanoutEmailQueue() {
         return new Queue(QUEUE_NAME_EMAIL, true);
     }
 
     @Bean
-    public Queue smsQueue() {
+    public Queue fanoutSmsQueue() {
         return new Queue(QUEUE_NAME_SMS, true);
     }
 
     @Bean
-    public Queue weChatQueue() {
+    public Queue fanoutWeChatQueue() {
         return new Queue(QUEUE_NAME_WECHAT, true);
     }
 
+    /**
+     * 每个bean的签名最好不能冲突
+     *
+     * @return
+     */
     @Bean
-    public Binding emailBind() {
-        return BindingBuilder.bind(emailQueue()).to(fanoutExchange());
+    public Binding fanoutEmailBind() {
+        return BindingBuilder.bind(fanoutEmailQueue()).to(fanoutExchange());
     }
 
     @Bean
-    public Binding smsBind() {
-        return BindingBuilder.bind(smsQueue()).to(fanoutExchange());
+    public Binding fanoutSmsBind() {
+        return BindingBuilder.bind(fanoutSmsQueue()).to(fanoutExchange());
     }
 
     @Bean
-    public Binding weChatBind() {
-        return BindingBuilder.bind(weChatQueue()).to(fanoutExchange());
+    public Binding fanoutWeChatBind() {
+        return BindingBuilder.bind(fanoutWeChatQueue()).to(fanoutExchange());
     }
 
 }

@@ -17,7 +17,7 @@ public class FanoutSmsConsumerService {
     @RabbitHandler
     public void messageAccept(String message) {
         // 省略
-        System.out.println("sms-------------->" + message);
+        System.out.println("fanout sms--------------> " + message);
     }
 
 }

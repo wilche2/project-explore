@@ -17,7 +17,7 @@ public class FanoutEmailConsumerService {
     @RabbitHandler
     public void messageAccept(String message) {
         // 此处省略发邮件的逻辑
-        System.out.println("email-------------->" + message);
+        System.out.println("fanout email--------------> " + message);
     }
 
 }
