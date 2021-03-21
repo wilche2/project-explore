@@ -17,4 +17,15 @@ class SpringBootRabbitmqProducerApplicationTests {
         orderService.makeOrder(1L, 1L, 12);
     }
 
+    @Test
+    public void testDirect() throws Exception {
+        for (int i = 0; i < 10; i++) {
+            Thread.sleep(1000);
+            Long userId = 100L + i;
+            Long productId = 10001L + i;
+            int num = 10;
+            orderService.makeOrderDirect(userId, productId, num);
+        }
+    }
+
 }

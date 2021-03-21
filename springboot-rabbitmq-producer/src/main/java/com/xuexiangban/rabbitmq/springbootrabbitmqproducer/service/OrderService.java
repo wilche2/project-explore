@@ -26,7 +26,18 @@ public class OrderService {
         System.out.println("用户 " + userId + ",订单编号是：" + orderNumer);
         // 发送订单信息给RabbitMQ fanout
         // 参数1：交换机名称 参数2：routeKey/queueName 参数3：消息内容
-        rabbitTemplate.convertAndSend(RabbitMqConstants.EXCHANGE_NAME_ORDER, routeKey, orderNumer);
+        rabbitTemplate.convertAndSend(RabbitMqConstants.EXCHANGE_NAME_ORDER_FANOUT, routeKey, orderNumer);
+    }
+
+    public void makeOrderDirect(Long userId, Long productId, int num) {
+        // 1： 模拟用户下单
+        String orderNumer = UUID.randomUUID().toString();
+
+        System.out.println("用户 " + userId + ",订单编号是：" + orderNumer);
+        // 发送订单信息给RabbitMQ fanout
+        // 参数1：交换机名称 参数2：routeKey/queueName 参数3：消息内容
+        rabbitTemplate.convertAndSend(RabbitMqConstants.EXCHANGE_NAME_ORDER_DIRECT, "email", orderNumer);
+        rabbitTemplate.convertAndSend(RabbitMqConstants.EXCHANGE_NAME_ORDER_DIRECT, "sms", orderNumer);
     }
 
 }

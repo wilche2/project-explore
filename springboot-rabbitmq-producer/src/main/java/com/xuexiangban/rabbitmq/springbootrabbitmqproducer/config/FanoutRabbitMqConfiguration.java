@@ -23,22 +23,22 @@ public class FanoutRabbitMqConfiguration {
      */
     @Bean
     public FanoutExchange fanoutExchange() {
-        return new FanoutExchange(EXCHANGE_NAME_ORDER, true, false);
+        return new FanoutExchange(EXCHANGE_NAME_ORDER_FANOUT, true, false);
     }
 
     @Bean
     public Queue fanoutEmailQueue() {
-        return new Queue(QUEUE_NAME_EMAIL, true);
+        return new Queue(QUEUE_NAME_EMAIL_FANOUT, true);
     }
 
     @Bean
     public Queue fanoutSmsQueue() {
-        return new Queue(QUEUE_NAME_SMS, true);
+        return new Queue(QUEUE_NAME_SMS_FANOUT, true);
     }
 
     @Bean
     public Queue fanoutWeChatQueue() {
-        return new Queue(QUEUE_NAME_WECHAT, true);
+        return new Queue(QUEUE_NAME_WECHAT_FANOUT, true);
     }
 
     /**
